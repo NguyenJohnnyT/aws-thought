@@ -1,0 +1,2 @@
+# aws-thought
+aws practice
