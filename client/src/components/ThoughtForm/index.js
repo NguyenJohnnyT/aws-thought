@@ -18,7 +18,21 @@ const ThoughtForm = () => {
   // submit form
   const handleFormSubmit = (event) => {
     event.preventDefault();
-
+    //Request to API endpoint
+    const postData = async () => {
+      const res = await fetch('/api/users', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formState)
+      })
+      const data = await res.json();
+      console.log(data);
+    }
+    postData();
+    document.location.reload();
     // clear form value
     setFormState({ username: "", thought: "" });
     setCharacterCount(0);
