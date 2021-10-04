@@ -38,7 +38,7 @@ router.get('/users/:username', (req, res) => {
     ExpressionAttributeValues: {
       ":user": req.params.username
     },
-    ProjectionExpression: "#th, #ca",
+    ProjectionExpression: "#un, #th, #ca",
     ScanIndexForward: false
   };
   dynamodb.query(params, (err, data) => {
@@ -47,6 +47,7 @@ router.get('/users/:username', (req, res) => {
       res.status(500).json(err); // an error occurred
     } else {
       console.log("Query succeeded.");
+      // console.log(data.Items);
       res.json(data.Items)
     }
   });
