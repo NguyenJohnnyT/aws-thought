@@ -21,7 +21,7 @@ Important documentation for using AWS and its services:
 
 While the API end points are functional, there are multiple AWS procceses that the user will need to go through in order to create their own working server, database, and storage.  For new AWS users, it would be important to find a tutorial on how to create a accounts, setting AWS credentials with the AWS CLI, and creating security policies while also setting up DynamoDB, S3, and EC2 so that the application works.
 
-Users with AWS credentials that have set up an S3 bucket, DynamoDB, and E2 will be interested in the following lines of code:
+Users with AWS credentials that have set up an IAM user, S3 bucket, DynamoDB, and E2 will be interested in the following lines of code:
 ```
 in ./server/utils/params-config.js
 ...
@@ -67,10 +67,9 @@ Server-side:\
 [uuid](https://www.npmjs.com/package/uuid) Creating unique ids for images uploaded\
 
 Setting up EC2 environment:\
-AWS-CLI\
-Git\
-npm\
-[nodejs](https://nodejs.org/en/) Use nodejs in our instance\
+[AWS-CLI](https://aws.amazon.com/cli/) Use AWS services through a command line\
+[Git](https://github.com/git-guides/install-git) Use git\
+[npm & nodejs](https://nodejs.org/en/) Use nodejs in our instance\
 [nginx](http://nginx.org/) Application server that will expose EC2 instance\
 [pm2](https://www.npmjs.com/package/pm2) Process manager--keeps application running after we have logged out of server
 
