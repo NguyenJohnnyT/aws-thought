@@ -91,4 +91,4 @@ Future ideas: Delete routes to delete any thoughts, actual user log ins
 This application is licensed under [MIT](https://opensource.org/licenses/MIT).
 
 ## Questions
-Please direct any questions to me at jtn-mechocreamy@gmail.com.
+Please direct any questions to me at jtn.mechocreamy@gmail.com.
