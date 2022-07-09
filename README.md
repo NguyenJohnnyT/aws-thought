@@ -1,7 +1,6 @@
 # AWS Deep Thoughts
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 #
-## [Deployed Link](http://3.22.175.224/) Public IP to EC2 Server
 ![Example gif](Deep_Thoughts.gif)
 
 ## Table of Contents
